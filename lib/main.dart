@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            StreamBuilder<Object>(
+            StreamBuilder<int>(
                 stream: _counterBloc.counterObservable,
                 builder: (context, snapshot) {
                   return Text(
